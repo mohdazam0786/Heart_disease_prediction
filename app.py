@@ -30,9 +30,9 @@ st.markdown("""
 
 @st.cache_resource
 def load_assets():
-    model = joblib.load("KNN_heart.pkl")
-    scaler = joblib.load("scaler.pkl")
-    expected_columns = joblib.load("columns.pkl")
+    model = joblib.load("models/KNN_heart.pkl")
+    scaler = joblib.load("models/scaler.pkl")
+    expected_columns = joblib.load("models/columns.pkl")
     return model, scaler, expected_columns
 
 try:
